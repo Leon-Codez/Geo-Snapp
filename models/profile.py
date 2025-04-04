@@ -1,7 +1,6 @@
 from pydantic import BaseModel
-from typing import List
-from datetime import datetime
 from typing import List, Optional
+from datetime import datetime
 
 class ProfileOut(BaseModel):
     username: str
@@ -9,7 +8,7 @@ class ProfileOut(BaseModel):
     achievements: List[str]
     favorite_location: str
     profile_pic: str
-    join_date: datetime  # or datetime if you want to format it later
+    join_date: datetime
 
 class ProfileUpdate(BaseModel):
     bio: Optional[str] = None
