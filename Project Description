@@ -1,0 +1,116 @@
+Geo Snap
+
+
+
+
+
+
+
+
+
+
+
+Dominion Olajobi
+Isaiah Hollensworth 
+Leon Dennen 
+David Rakotoarivony 
+
+(Group 3)
+
+
+
+
+
+
+
+
+
+
+ 
+Table of Contents
+
+Introduction
+..................................................................................................................................... 3
+
+Why is this a “Killer App”
+.............................................................................................................. 3
+
+Business Needs/Requirements ............................................................................................................... 3
+
+Target Audience
+.............................................................................................................................. 3
+
+Business Values
+ .................................................................................................................................. 3
+
+Special Issues/Constraints
+ ..................................................................................................................... 4
+
+Technical Feasibility
+....................................................................................................................... 4
+
+Economic Feasibility
+....................................................................................................................... 4
+
+Organization Feasibility
+....................................................................................................................... 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction
+Many people love exploring new places, capturing memories, and sharing them with friends. Our app aims to make exploration more interactive by encouraging users to visit named locations—like Syracuse University—and unlocking those landmarks within the app. Users can take pictures of the locations and share them with their friends, who can react and interact. This app will showcase a global-themed map of all the places users and their friends have discovered, featuring photos and reactions, turning exploration into a fun, shared adventure. It's a way to make every landmark a memorable experience and share it with others, encouraging a deeper connection with the world around us.
+
+Why is this a “Killer App”? 
+This app blends social media with real-world exploration, similar to Pokémon Go in its promotion of outdoor ventures. It motivates users to get out, visit new places, and share their experiences. By gamifying exploration, users will feel rewarded for discovering new locations. It’s perfect for travelers, adventurers, and anyone looking to make the most of their surroundings—while also building a visual, interactive log of their journey with friends.
+
+Business Needs/Requirements
+Our app shall be an interactive and engaging way for tourists and students to explore cities, tourist attractions, or college campuses. It shall allow users to “capture” real-world locations using augmented reality and enable them to learn about the area. The app shall use GPS and geolocation systems. In addition to this, below is a list of other essential needs and requirements for the app:
+-	The app shall have a User-friendly UI and UX
+-	The app shall allow the user to track previous place 
+-	The app shall allow for use to follow a reward system
+-	The app shall allow each user to create a profile
+
+Target Audience
+-	Travelers and adventurers who enjoy discovering new locations.
+-	Social media enthusiasts who like sharing their experiences with friends.
+-	Students and young adults looking to explore their local area.
+-	People who enjoy gamified activities and unlocking achievements.
+-	Anyone interested in building a visual record of their travels
+
+Business Values 
+-	Enhance tourist experience: We encourage tourists to travel and capture what they see as they go along with their trips. This also allows them to learn the history of the location they are visiting. By gamifying the exploration experience, users are motivated to visit new places, break routines, and discover their surroundings.
+Monetization Opportunities: The app can allow various campuses to advertise their business through our app. It would allow for ad/recommendation to the user in a particular location to go to their place of business. 
+-	Social Media Fatigue: Traditional social media often focuses on passive scrolling. This app encourages active participation by connecting social interactions with real-world activities.
+-	Personal Growth: Exploring new locations fosters curiosity, and users can visually track their journey and growth through the app's interactive map and photo collection.
+
+
+Special Issues or Constraints
+One of the app's special issues and constraints is data privacy. Since we are an app that uses people's location, many may question where their data is stored. Another is device compatibility, as some people’s mobile devices cannot use augmented reality.
+
+Technical Feasibility 
+Using geolocation services, the app will determine when users are near specific landmarks, allowing for unlocking. The integration of map APIs (such as Google Maps) will help visualize users' progress globally. A backend capable of handling user-generated content (photos, comments, and reactions) will be critical for scalability. The app can be developed using cross-platform frameworks to ensure compatibility on both iOS and Android, incorporating features for geolocation, social networking, and real-time interaction.
+
+Economic Feasibility 
+This app is economically feasible, with several potential revenue streams and a manageable development cost. Initial investment will be required for app development, server infrastructure, and marketing. However, once launched, revenue can be generated through in-app advertisements, premium features, and partnerships with tourism boards or local businesses. Users may also opt for a subscription model that provides exclusive features, such as advanced statistics on their travels or special badges. Development costs can be minimized by using cross-platform frameworks, and marketing can use other social media platforms to build an initial user base. With a growing number of users, the app has the potential to generate a sustainable return on investment over time, making it financially viable.
+
+Organization Feasibility 
+Maintenance & Updates: A dedicated team will constantly manage the app’s content and monitor its functionality while incorporating user feedback. 
+
+
