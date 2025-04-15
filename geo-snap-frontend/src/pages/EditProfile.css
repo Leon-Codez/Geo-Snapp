@@ -1,0 +1,145 @@
+.edit-profile-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: var(--bg);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: var(--text);
+    transition: all 0.3s ease;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: var(--input-bg);
+    color: var(--text);
+  }
+  
+  input[type="file"] {
+    padding: 0.4rem;
+  }
+  
+  button {
+    padding: 0.8rem;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  .profile-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  
+  /* Light Theme */
+  :root {
+    --bg: #ffffff;
+    --text: #111111;
+    --border: #cccccc;
+    --input-bg: #f8f8f8;
+    --accent: #ff914d;
+    --accent-hover: #ff6d00;
+  }
+  
+  /* Dark Theme (will be conditionally added later) */
+  body.dark {
+    --bg: #1e1e1e;
+    --text: #eeeeee;
+    --border: #444;
+    --input-bg: #2c2c2c;
+    --accent: #6ec1e4;
+    --accent-hover: #52a7d5;
+  }
+  
+  .profile-card-preview {
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: var(--input-bg);
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .card-pic {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+  }
+  
+  .card-content h3 {
+    font-size: 1rem;
+    margin: 0 0 0.25rem;
+  }
+  
+  .card-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text);
+    .theme-toggle {
+        background-color: transparent;
+        border: 2px solid var(--accent);
+        color: var(--accent);
+        border-radius: 10px;
+        padding: 0.4rem 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        transition: all 0.2s ease;
+      }
+      
+      .theme-toggle:hover {
+        background-color: var(--accent);
+        color: white;
+      }      
+  }
+  .back-button {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  
