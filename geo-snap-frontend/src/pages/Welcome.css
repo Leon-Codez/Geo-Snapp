@@ -1,5 +1,5 @@
 .welcome-background {
-  background-image: url('/assets/welcome.png'); /* This should match your public path */
+  background-image: url('/assets/welcome.png'); /* Ensure this image exists in public/assets */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,10 +8,22 @@
   position: relative;
 }
 
-/* Positioning the real button to align with the drawn one */
+/* Title added from Leon's version */
+.welcome-title {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Continue Button */
 .welcome-overlay-button {
   position: absolute;
-  bottom: 12px; /* Adjust this if needed */
+  bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #5ec8f2;
@@ -31,3 +43,4 @@
 .welcome-overlay-button:hover {
   background-color: #3ca8d9;
 }
+

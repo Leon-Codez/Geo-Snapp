@@ -6,11 +6,12 @@ function Welcome() {
   const navigate = useNavigate();
 
   const handleContinue = () => {
-    navigate('/');
+    navigate('/login'); // FIXED: takes user to login
   };
 
   return (
     <div className="welcome-background">
+      <h1 className="welcome-title">Exploring to Change the World!</h1>
       <button className="welcome-overlay-button" onClick={handleContinue}>
         Continue
       </button>
@@ -19,3 +20,5 @@ function Welcome() {
 }
 
 export default Welcome;
+
+  

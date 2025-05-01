@@ -5,30 +5,17 @@ import Register from './pages/Register';
 import EditProfile from './pages/EditProfile';
 import Welcome from './pages/Welcome';
 import ProfilePage from './pages/ProfilePage';
-import LocationUnlocker from './pages/LocationUnlocker';
-import PhotoUploader from './pages/PhotoUploader';
-import LeafletMap from './pages/LeafletMap';
-
-
-
-
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/welcome" element={<Welcome />} />
           <Route path="/" element={<Welcome />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<EditProfile userId={1} />} />
           <Route path="/profile-view" element={<ProfilePage username="testuser" />} />
-          <Route path="/unlock" element={<LocationUnlocker userId={1} />} />
-          <Route path="/upload" element={<PhotoUploader />} />
-          <Route path="/map" element={<LeafletMap />} />
-
-
         </Routes>
       </div>
     </Router>

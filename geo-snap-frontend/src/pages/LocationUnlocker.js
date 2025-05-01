@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const LocationUnlocker = ({ userId }) => {
-  const [location, setLocation] = useState(null);
+  const [, setLocation] = useState(null);
   const [landmarks, setLandmarks] = useState([]);
   const [status, setStatus] = useState("Click to check your location");
 
