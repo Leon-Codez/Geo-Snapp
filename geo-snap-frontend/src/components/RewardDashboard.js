@@ -4,14 +4,16 @@ import React, { useState, useEffect } from 'react';
 import RewardsManager from './RewardsManager';
 
 const RewardDashboard = ({ user }) => {
-  const rewards = new RewardsManager(user);
-  const [points, setPoints] = useState(rewards.getPoints());
-  const [badge, setBadge] = useState('No Badge');
+  const rewards = new RewardsManager(user); // handles reward logic for this user 
+  const [points, setPoints] = useState(rewards.getPoints()); // current user points 
+  const [badge, setBadge] = useState('No Badge'); //badge based on point total 
 
+  // Calculates badges whenever paints change
   useEffect(() => {
     determineBadge(points);
   }, [points]);
 
+  // set badges based on point 
   const determineBadge = (currentPoints) => {
     if (currentPoints >= 100) {
       setBadge('Gold Explorer');
@@ -29,6 +31,7 @@ const RewardDashboard = ({ user }) => {
     setPoints(updatedPoints);
   };
 
+// shows dashboard with user info, points, badges and activity 
   return (
     <div className="p-6 max-w-md mx-auto bg-white rounded-xl shadow-md space-y-4">
       <h1 className="text-2xl font-bold">Welcome, {user.name}!</h1>
