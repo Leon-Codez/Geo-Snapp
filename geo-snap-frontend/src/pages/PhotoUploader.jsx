@@ -4,10 +4,6 @@ import ReportPhoto from './ReportPhoto';
 
 
 // Simulated user profile object
-let user = {
-  name: 'Isaiah',
-  points: 0
-};
 
 const rewards = new RewardsManager(user);
 
