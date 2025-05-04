@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 const LocationUnlocker = ({ userId }) => {
-  const [location, setLocation] = useState(null);
-  const [landmarks, setLandmarks] = useState([]);
+  const [location, setLocation] = useState(null); //user's current location 
+  const [landmarks, setLandmarks] = useState([]); //list of all landmarks
+
   const [status, setStatus] = useState("Click to check your location");
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const LocationUnlocker = ({ userId }) => {
     if (!navigator.geolocation) {
       setStatus("Geolocation not supported");
       return;
-    }
+    } // gets users current location 
 
     setStatus("Getting location...");
 
@@ -36,10 +37,10 @@ const LocationUnlocker = ({ userId }) => {
       { enableHighAccuracy: true }
     );
   };
-
+// calculate distance between two gps points using haversine formula 
   const haversineDistance = (lat1, lon1, lat2, lon2) => {
     const toRad = (val) => (val * Math.PI) / 180;
-    const R = 6371000;
+    const R = 6371000; // Earth radius in meters 
     const dLat = toRad(lat2 - lat1);
     const dLon = toRad(lon2 - lon1);
     const a =
@@ -49,17 +50,17 @@ const LocationUnlocker = ({ userId }) => {
     return R * c;
   };
 
-  const checkNearbyLandmarks = (lat, lon) => {
+  const checkNearbyLandmarks = (lat, lon) => { // check if user is within range of any landmark 
     for (let landmark of landmarks) {
       const distance = haversineDistance(lat, lon, landmark.latitude, landmark.longitude);
       if (distance <= (landmark.radius || 50)) {
-        unlockLocation(landmark);
+        unlockLocation(landmark); // unlock if within range 
         return;
       }
     }
     setStatus("No nearby landmarks found.");
   };
-
+// POST to backend to unlock location for the user 
   const unlockLocation = async (landmark) => {
     try {
       const response = await fetch("http://localhost:5000/locations/unlock", {
