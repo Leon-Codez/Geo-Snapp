@@ -5,18 +5,18 @@ import ReportPhoto from './ReportPhoto';
 
 // Simulated user profile object
 
-const rewards = new RewardsManager(user);
+const rewards = new RewardsManager(user);// reward logic 
 
 function PhotoUploader() {
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [uploadMessage, setUploadMessage] = useState('');
-  const [points, setPoints] = useState(user.points);
+  const [selectedFile, setSelectedFile] = useState(null);// holds the photo
+  const [uploadMessage, setUploadMessage] = useState(''); // message to show status
+  const [points, setPoints] = useState(user.points); //displays and updates pints 
 
-  const handleFileChange = (e) => {
+  const handleFileChange = (e) => { 
     setSelectedFile(e.target.files[0]);
     setUploadMessage('');
   };
-
+// uploadm add points and updates the ui 
   const handleUpload = () => {
     if (!selectedFile) {
       setUploadMessage('Please select a photo first.');
