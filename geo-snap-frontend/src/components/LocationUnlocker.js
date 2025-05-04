@@ -6,7 +6,7 @@ const LocationUnlocker = ({ userId }) => {
   const [status, setStatus] = useState("Click to check your location");
 
   useEffect(() => {
-    fetch("http://localhost:5000/locations")
+    fetch("http://localhost:3000/locations")
       .then((res) => res.json())
       .then(setLandmarks)
       .catch((err) => console.error("Failed to fetch landmarks:", err));
