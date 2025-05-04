@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import RewardsManager from '../utils/RewardsManager'; // Adjust if in a different folder
+import ReportPhoto from './ReportPhoto';
+
 
 // Simulated user profile object
 let user = {
@@ -44,6 +46,7 @@ function PhotoUploader() {
       </button>
       <p>{uploadMessage}</p>
       <p><strong>Total Points:</strong> {points}</p>
+      <ReportPhoto contentId="photo_123" />
     </div>
   );
 }
